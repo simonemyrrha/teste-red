@@ -1,0 +1,72 @@
+@import '../libs/vars';
+@import '../libs/functions';
+@import '../libs/mixins';
+
+
+/* Type */
+
+	a {
+
+		font-weight: _font-weight(bold);
+		
+		display: inline-block;
+		
+		text-decoration: none;
+		
+		text-transform: uppercase;
+		
+		font-size: 14px;
+
+		color: _palette(font-color-menu);
+	}
+
+	p{
+		font-size: 16px;
+		
+		font-weight: _font-weight(bold);
+	
+	}
+
+	h1 {
+	
+		text-transform: uppercase;
+	
+		font-size: 30px;
+	
+		padding-bottom: 20px;
+    
+    	padding-top: 20px;
+
+    	
+	
+	}
+	
+	h2 {
+	
+		font-size: 1.25em;
+	
+	}
+
+	h3 {
+	
+		font-size: 0.875em;
+	
+	}
+
+	h4 {
+	
+		font-size: 1em;
+	
+	}
+
+	h5 {
+	
+		font-size: 1em;
+	
+	}
+
+	h6 {
+	
+		font-size: 1em;
+	
+	}

@@ -1,0 +1,65 @@
+// Misc.
+	$misc: (
+		z-index-base:		10000
+	);
+
+// Duration.
+	$duration: (
+		transition:			0.2s,
+		bg:					1.75s,
+		main:				1s
+	);
+
+// Size.
+	$size: (
+		border-radius:		7px,s
+		border-width:		0px
+				
+	);
+
+// Palette.
+	$palette: (
+		bg:						#ffffff,
+
+		bg-button: 				#313131,
+
+		bg-button-by: 			#ff5c2b,
+		
+		font-color-menu: 		#000000,
+
+		font-color-text: 		#010101,
+
+		font-color-pers: 		#666666,
+
+		font-color-filter: 		#999999,
+
+		font-color-button: 		#fefefe,
+
+		color-border: 			#cccccc
+		
+	);
+	
+
+	$float:(
+
+		right: 	right,
+
+		left: 	left,
+
+		clear: 	both
+	);
+
+
+//style
+
+	$font-weight:(
+
+		normal: normal,
+		
+		bold: bold,
+		
+		bolder: bolder,
+		
+		lighter: lighter
+
+	);

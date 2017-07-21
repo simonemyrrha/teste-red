@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html ng-app="App">
+  <head>
+   	<meta charset="utf-8">
+   	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+   	<title></title>
+   	<meta name="description" content="">
+   	<meta name="keywords" content="">
+   	<meta name="robots" content="index, follow">
+   	<meta name="author" content="Simone Myrrha">
+
+   <!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
+    <style>@import url('https://fonts.googleapis.com/css?family=Roboto');</style>
+
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/slicknav.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.default.css">
+
+
+    <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+
+    
+  </head>
+
+  <body>
+    <div id="wrap">
+      <!-- CABEÇALHO -->
+      <header id="header" class="container clearfix">
+        <h1 class="logo"> <a href="index.html">Nike </a></h1>
+
+        <nav class="menu">
+          <ul>
+            <li><a href="#">masculino</a></li>
+            <li><a href="#">feminio</a></li>
+            <li><a href="#">menino</a></li>
+            <li><a href="#">menina</a></li>
+          </ul>
+          <a class="carshipping" href="#" title="Seu carrinho de compras">Carrinho de compras</a>
+        </nav>
+      </header>
+
+      <section id="banner" class="clearfix">
+	    <img src="images/banner.png" alt="">
+      </section>
+
+      <section class="container clearfix listProducts">
+          <div class="filter">
+            <h5>Chuteiras HyperVenom:</h5>
+            <ul class="filterlist">
+              <li>
+                <input type="checkbox" id="futCampo">
+                <label for="ossm">Futebol de Campo</label>
+              </li>
+
+              <li>
+                <input type="checkbox" id="futSociety">
+                <label for="ossm">Futebol Society</label>
+              </li>
+
+              <li>
+                <input type="checkbox" id="CanoBaixo">
+                <label for="ossm">Cano Baixo</label>
+              </li>
+
+              <li>
+                <input type="checkbox" id="CanoAlto">
+                <label for="ossm">Cano Alto</label>
+              </li>
+
+            </ul>
+            <a href="" id="all" class="buttonAll">Todos os produtos</a>
+
+             
+            <div id="results" class="showfilter">
+              
+              <div class="clearfix inner-filter">
+                <img src="#" alt="">
+                <h3>title</h3>
+                <p>category</p>
+                <p>price</p>
+                <p>ou 10X de $14 sem juros</p>
+                <button>Comprar</button>
+                 <hr>
+              </div>
+
+
+            </div>
+          </div>
+
+      </section>
+      
+
+      <!--  Products-->
+      <section class="container clearfix product">
+
+        <p>Mais vendidos</p>
+        <div id="bestsellers"></div>
+
+        <p>Lançamentos</p>
+
+        <div id="release"></div>
+      
+      </section>
+
+      <!-- Banner RODAPÉ-->
+      <section class="banner_bottom clearfix">
+        <div class="title container">
+          <h2> Just do it.</h2>
+          <a href="#openModal" ng-click="resetFilters()" class="buttonAll">Todos os produtos</a>
+           <div id="openModal" class="modalDialog">
+            <div>
+              <a href="#close" title="Close" class="close">X</a>
+              <div id="allproducts"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- RODAPÉ -->
+      <footer class="container clearfix">
+        <p class="copyright">
+          Nike Copyright 2017 - all rights reserved.
+        </p>
+      </footer>
+
+
+    </div>
+    <script>document.write("<base href=\"" + document.location + "\" />");</script>
+    <!-- Scripts -->
+    <!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
+    <!-- JQUERY -->
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="assets/js/app_new.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.slicknav.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+
+        $('#header').slicknav();
+
+        $('.showfilter').hide();
+
+      });  
+       
+    </script>
+
+
+
+  </body>
+</html>

@@ -1,0 +1,155 @@
+@import '../libs/vars';
+@import '../libs/functions';
+@import '../libs/mixins';
+
+header {
+	
+	.logo {
+	
+		width: 56px; 
+	
+		height: 56px; 
+	
+		float: left; 
+	
+		background: url(#{$path-to-img}/nike-logo.png) center center/56px no-repeat;
+
+		margin-right: 41px;
+	
+		a{
+			font-size: 0;
+		}
+	}
+	
+	.menu { 
+
+		padding-top: 20px;
+
+		ul {
+		
+			float: left;
+		
+		}
+
+		a.carshipping{
+			
+			float: right;
+
+			width: 32px; 
+	
+			height: 32px; 
+	
+			background: url(#{$path-to-img}/cart.png) center center/32px no-repeat;
+	
+			font-size: 0;
+		}
+
+	
+	}
+
+}
+
+
+.slicknav_menu { 
+
+	display:none;
+}
+
+//banner
+#banner{
+
+	img{ 
+
+		width: 100%;
+
+	}
+
+}
+.showfilter{ display:none;}
+
+
+/* ========== MOBILE FIRST ==========*/
+
+/* Telefones em paisagem e abaixo */
+@include breakpoint(xxsmall) { 
+    
+    .container {width: 100%;}
+   
+    #banner, .filter{ display: none; }
+
+    .js #header {
+		
+		display:none;
+	}
+	
+	.js .slicknav_menu {
+		
+		display:block;
+	}
+
+	.modalDialog > div {
+		width: 300px;
+		margin: 1% auto;
+
+	}
+
+ }
+
+/* Telefones em paisagem a tablet em retrato */
+@include breakpoint(xsmall) {
+   
+   #banner, .filter{ display: none; }
+   
+   .container {width: 100%;}
+
+   .js #header {
+		display:none;
+	}
+	
+	.js .slicknav_menu {
+		display:block;
+	}
+
+	.modalDialog > div {
+		width: 300px;
+		margin: 1% auto;
+
+	}
+  
+}
+
+/* Tablet em retrato a paisagem e desktop */
+@include breakpoint(small and medium) {
+   
+    .container {width: 100%;}
+   	
+   	.js #header{
+		display:none;
+	}
+	
+	.js .slicknav_menu {
+		display:block;
+	}
+
+	.produts .swiper-container {
+    	
+    	width: 82% !important;
+    	
+	}
+
+	.modalDialog > div {
+		width: 400px;
+		margin: 2% auto;
+
+	}
+
+}
+
+/* Desktop grande */
+@include breakpoint(large and xlarge) {
+    
+    .container {width: 100%;}
+
+   
+
+}

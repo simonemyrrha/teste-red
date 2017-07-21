@@ -1,0 +1,12 @@
+@import 'libs/vars';
+@import 'libs/functions';
+@import 'libs/mixins';
+@import 'libs/skel';
+
+/* Basic */
+
+	body {
+		&:after {
+			display: none;
+		}
+	}

@@ -1,0 +1,55 @@
+@import 'libs/vars';
+@import 'libs/functions';
+@import 'libs/mixins';
+@import 'libs/skel';
+@import 'font-awesome.min.css';
+
+@include skel-breakpoints((
+		
+		xlarge: '(max-width: 1200px)',
+		
+		large: '(min-width: 980px)',
+
+		medium: '(max-width: 979px)',
+
+		small: '(min-width: 768px)',
+		
+		xsmall: '(max-width: 767px)',
+		
+		xxsmall: '(max-width: 480px)'
+	
+	));
+
+@include skel-layout((
+	
+	reset: 'full',
+	
+	boxModel: 'border'
+));
+
+$path-to-img : "../../images";
+
+
+// Base.
+
+	@import 'base/page';
+	
+	@import 'base/typography';
+
+// Component.
+
+	@import 'components/icon';
+	
+	@import 'components/list';
+	
+	@import 'components/button';
+
+// Layout.
+
+	@import 'layout/main';
+
+	@import 'layout/products';
+	
+	@import 'layout/banner_bottom.scss'; 
+	
+	@import 'layout/footer';	

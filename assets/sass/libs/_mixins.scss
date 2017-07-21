@@ -1,0 +1,26 @@
+//mixin icon
+@mixin icon($content: false, $where: before) {
+
+	text-decoration: none;
+
+	&:#{$where} {
+
+		@if $content {
+			content: $content;
+		}
+
+		-moz-osx-font-smoothing: grayscale;
+		-webkit-font-smoothing: antialiased;
+		font-family: FontAwesome;
+		font-style: normal;
+		font-weight: normal;
+		text-transform: none !important;
+
+	}
+
+}
+
+@mixin icon-alt($content: false, $link: false) {
+	@include icon($content);
+	$size: _size(border-width) * 1.25;
+}

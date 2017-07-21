@@ -1,0 +1,26 @@
+@import '../libs/vars';
+@import '../libs/functions';
+@import '../libs/mixins';
+
+/* Footer */
+
+footer{
+	
+  p {
+
+		padding-bottom: 15px;
+   		
+  	padding-top: 15px;
+    		
+  	text-align: center;
+
+  	font-weight: _font-weight(lighter);
+
+  	font-size: 14px;
+
+		color: _palette(font-color-filter);
+
+	}
+   		
+
+}

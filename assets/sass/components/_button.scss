@@ -1,0 +1,43 @@
+@import '../libs/vars';
+@import '../libs/functions';
+@import '../libs/mixins';
+
+/* Button */
+
+	button,	.buttonAll {
+		@include vendor('appearance', 'none');
+		
+		display: inline-block;
+		
+		padding: 16px;
+		
+		border-radius: _size(border-radius);
+		
+		cursor: pointer;
+		
+		text-transform: uppercase;
+		
+		text-align: center;
+		
+		text-decoration: none;
+		
+		white-space: nowrap;
+		
+		color: _palette(font-color-button);
+		
+		font-weight: _font-weight(bold);
+		
+		border-color: transparent;
+
+		
+		&.icon {
+		
+			padding-left: 1.35em;
+
+			&:before {
+		
+				margin-right: 0.5em;
+		
+			}
+		}
+	}
